@@ -1,10 +1,14 @@
-package com.webApp.TaskManagement.DTO;
+package com.webApp.taskManagement.dto;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.webApp.taskManagement.exceptionHandler.UserException;
 import jakarta.validation.constraints.*;
+import jdk.jshell.spi.ExecutionControl;
 import lombok.*;
 
 import java.time.LocalDateTime;
+import java.util.List;
 import java.util.Set;
 
 @Getter
@@ -12,8 +16,9 @@ import java.util.Set;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class UserDTO {
-    private Long id;
+    private String id;
 
     @NotNull
     @JsonProperty("username")
@@ -40,4 +45,6 @@ public class UserDTO {
     private LocalDateTime createdAt;
 
     private Set<String> roles;
+    private String errorMessage;
+    private String message;
 }

@@ -1,4 +1,4 @@
-package com.webApp.TaskManagement.Models;
+package com.webApp.taskManagement.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -18,12 +18,14 @@ import java.util.Set;
 @Setter
 @Document(collection = "users")
 public class User {
-  @Id
-  private String id;
+  @Id private String id;
+
   @Indexed(unique = true)
   private String userName;
+
   @Indexed(unique = true)
   private String email;
+
   private String password;
   private LocalDateTime createdAt;
   private Set<String> roles = new HashSet<>();

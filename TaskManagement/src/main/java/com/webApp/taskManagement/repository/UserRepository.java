@@ -1,6 +1,6 @@
-package com.webApp.TaskManagement.Repository;
+package com.webApp.taskManagement.repository;
 
-import com.webApp.TaskManagement.Models.User;
+import com.webApp.taskManagement.models.User;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
