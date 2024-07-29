@@ -1,4 +1,4 @@
-package com.webApp.TaskManagement.Models;
+package com.webApp.taskManagement.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
