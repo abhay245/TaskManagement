@@ -1,4 +1,4 @@
-package com.webApp.TaskManagement.Database;
+package com.webApp.taskManagement.database;
 
 import com.mongodb.ConnectionString;
 import com.mongodb.MongoClientSettings;
@@ -19,7 +19,7 @@ import java.util.List;
 
 @Configuration
 @EnableMongoRepositories(basePackages = "com.example.taskmanagement.repositories")
-public class MongoConfig extends AbstractMongoClientConfiguration {
+public class mongoConfig extends AbstractMongoClientConfiguration {
 
     @Value("${spring.data.mongodb.uri}")
     private String mongoUri;
