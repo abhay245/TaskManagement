@@ -11,8 +11,8 @@ const HomePage = () => {
       <Container className="content">
         <Row>
           <Col>
-            <h2>Welcome to Taskify: Your Ultimate Task Management Companion! 🚀</h2>
-            <h3>Organize, Prioritize, and Conquer Your Tasks</h3>
+            <h2 className='heading'>Welcome to Taskify: Your Ultimate Task Management Companion! 🚀</h2>
+            <h4>Organize, Prioritize, and Conquer Your Tasks</h4>
             <p>
               Stay on top of your to-do list. Taskify is more than just a task manager;
               it’s your personal productivity hub. Whether you’re a busy professional,
